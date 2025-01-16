@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: rgb(39, 11, 10);
+    margin: 0 auto;
+    max-width: 600px;
+
+    header {
+        background-image: url(/Images/archives\ header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(39, 11, 10);
+        padding: 20px 30px;
+        text-align: center;
+        color:  #f3e8d1;
+        font-family: "Tangerine", serif;
+        font-weight: 400;
+        font-style: normal;
+        .glow-text:
+            color: black;
+            text-shadow: 0 0 10px #000000;
+            font-size: 25px;
+        
+            
+    }
+    
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav {
+        background-color: #690000;
+        width: 100%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav li {
+        position: relative;
+        padding: 1em 0;
+        text-align: center;
+        flex: 1;
+    }
+    
+    nav ul li {
+        border-right: 1px solid #fff;
+    }
+    
+    nav ul li:last-child {
+        border-right: none;
+    }
+
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+    }
+    nav ul li:hover > ul {
+        display: block;
+        background-color: #fff;
+    }
+    
+    /* Change font color on hover */
+    nav ul li:hover a { color: #3b0000; }
+    
+    /* Submenu */
+    nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #353535;
+        width: 100%;
+    }
+    
+    nav ul ul li {
+        width: 100%;
+    }
+    
+    nav ul li:hover > ul {
+        display: block;
+    }
+    
+    main{
+        background-color: #690000;
+        padding:30px;
+    }
+
+    main p{
+        color:#f3e8d1
+    }
+
+    main img {
+        width: 100%; 
+        height: 300px; 
+        object-fit: contain; 
+    }
+
+    footer{
+        color:#f3e8d1
+    }
+}
